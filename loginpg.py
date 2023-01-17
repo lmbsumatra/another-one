@@ -1,5 +1,6 @@
 import openpyxl
 from balanceinq import balanceInq
+from trynga import depositPg
 
 # from tkinter import *
 # from PIL import ImageTk, Image
@@ -17,7 +18,7 @@ def loginPg():
 
     # getting log in infos
     get_username = '04588IIIUD'
-    get_password = 'Password12345'
+    get_password = 'heyheyhey'
     counter = 0
 
     # checking for username
@@ -32,8 +33,10 @@ def loginPg():
 
     # checking password
     if get_password == db_user[8]:
-        balanceInq(db_user[0], db_user[7])
+        newbalance = depositPg(db_user[0], db_user[7])
+        print(newbalance)
 
+    
     # changing user infos
     change = 'I'+str(4)
     data[change].value = 'heyheyhey'
