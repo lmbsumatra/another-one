@@ -13,8 +13,8 @@ from tkinter import simpledialog
 
 def balanceInq(acct_no, bal_inq):
 
-    mainFrame = Frame(root, height=500, width=600)
-    mainFrame.place(x=0,y=0)
+    # mainFrame = Frame(root, height=500, width=600)
+    # mainFrame.place(x=0,y=0)
 
     x = acct_no
     m = bal_inq

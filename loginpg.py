@@ -1,18 +1,18 @@
 import openpyxl
 from balanceinq import balanceInq
 
-from tkinter import *
-from PIL import ImageTk, Image
-import tkinter.messagebox
-from tkinter import simpledialog
-root=Tk()
-root.geometry('600x500')
-root.resizable(0,0)
+# from tkinter import *
+# from PIL import ImageTk, Image
+# import tkinter.messagebox
+# from tkinter import simpledialog
+# root=Tk()
+# root.geometry('600x500')
+# root.resizable(0,0)
 
 def loginPg():
     
-    mainFrame = Frame(root, height=500, width=600)
-    mainFrame.place(x=0,y=0)
+    # mainFrame = Frame(root, height=500, width=600)
+    # mainFrame.place(x=0,y=0)
     print("Log In")
 
     # getting log in infos
@@ -38,7 +38,7 @@ def loginPg():
     change = 'I'+str(4)
     data[change].value = 'heyheyhey'
     xl.save("nag-iisa-lang-to.xlsx")
-    mainFrame.mainloop()
+    # mainFrame.mainloop()
             
 db_user = []    
 xl = openpyxl.load_workbook("nag-iisa-lang-to.xlsx")
